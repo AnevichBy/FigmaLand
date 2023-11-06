@@ -1,0 +1,89 @@
+.cta-section {  
+  padding: 80px 0;
+  text-align: center;
+  align-self: center;
+
+  @media screen and (max-width: $lg) { 
+    padding: 0;
+  }
+
+  &__inner {
+    display: flex;    
+
+    @media screen and (min-width: $lg) { 
+      align-items: center;
+      height: 370px;      
+      gap: 86px;
+      border-radius: 33px; 
+      background: #343434;
+      /* shadow */
+      box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (max-width: $lg) { 
+      background: #1E1E1E;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__left-content {
+    padding-left: 94px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+
+    @media screen and (max-width: $lg) { 
+      padding: 65px 104px;
+    } 
+  }
+
+  &__inner-text {
+    padding-left: 10px;
+    color: #FFF;
+    justify-self: flex-end;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px; /* 119.231% */
+    letter-spacing: 0.2px;
+
+    @media screen and (max-width: $lg) { 
+      text-align: center;
+      br {
+        display: none;
+      }
+    } 
+  }
+
+  &__line-chart {
+
+    @media screen and (min-width: $lg) { 
+      padding: 2px 0;
+      align-self: flex-end;
+      width: 585px;
+      height: 90%;
+      border-radius: 0 0 33px 0;
+      background: url("../images/LineChart1.jpeg") lightgray no-repeat;
+    }
+
+    @media screen and (max-width: $lg) { 
+      height: 383px;
+      background: url("../images/LineChart1.jpeg") 50% / contain no-repeat;
+    } 
+  }
+
+  &__button {
+    padding: 20px 36px;
+    background-color: #4452fe;
+    border-color: #4452fe;
+
+    @media screen and (min-width: $lg) {
+      align-self: flex-start;
+    }    
+
+    @media screen and (max-width: $lg) {
+      align-self: center;
+    }
+  }
+}

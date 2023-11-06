@@ -1,0 +1,110 @@
+.contents-section {
+  padding: 50px 199px;
+
+  @include lg-max {
+    padding-left: 199px;
+    padding-right: 199px;
+  }
+
+  &__subtitle {
+    margin-bottom: 44px;
+
+    @include lg-max {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+
+    @media screen and (max-width: $md) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }
+
+  &__card {
+    max-width: 476px;    
+    min-width: 389px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #FFF;
+    border: 1px solid #D3D3D3 {
+      radius: 10px;
+    };
+    /* shadow */
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15); 
+
+    @media screen and (min-width: $xl) {
+      width: 476px;
+    }
+
+    &-notebook {
+      gap: 57px;
+    }
+
+    &-notification {
+      gap: 30px;
+    }
+  }
+
+  &__card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  &__card-title {
+    color: var(--first-text, #000);
+    text-align: center;   
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.1px;
+  }
+
+  &__card-subtitle{
+    padding: 10px;
+    color: var(--first-text, #000);
+    text-align: center; 
+  }
+
+  &__card-image {    
+    margin: 0 auto;
+    max-width: 405px;  
+    min-width: 280px;
+    border-radius: 14px;   
+
+    @media screen and (min-width: $xl) {
+      width: 405px;
+    }
+
+    @media screen and (max-width: $xl) {
+      width: 340px;
+    }
+
+    @media screen and (max-width: $md) {
+      width: 280px;
+    }
+  }
+
+  &__card-link {
+    display: inline;
+    background-color: #4452fe;
+    border-color: #4452fe;
+  }
+}
